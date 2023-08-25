@@ -1,12 +1,11 @@
 <script lang="ts">
 import { event } from 'vue-gtag'
+
 export default {
   methods: {
     buttonClick() {
-      event('button_click', {
-        event_category: 'engagement',
-        event_label: 'click',
-        value: 1
+      event('conversion', {
+        send_to: 'AW-609295062/OBh-CJKJ-9YYENa1xKIC',
       })
     }
   },
