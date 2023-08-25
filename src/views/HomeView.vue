@@ -6,7 +6,6 @@
     <h1>Home</h1>
     <hr>
     <br>
-    <button class="btn-click">Button Click</button>
     <br>
     <br>
     <hr>

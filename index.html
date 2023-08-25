@@ -14,11 +14,27 @@
     gtag('js', new Date());
 
     gtag('config', 'G-WPPHHHRZ1T');
+
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof (url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+        'send_to': 'AW-609295062/ex2HCOXo-NYYENa1xKIC',
+        'event_callback': callback
+      });
+      return false;
+    }
   </script>
 
 </head>
 
 <body>
+  <div>
+    <button class="btn-click" @click="gtag_report_conversion">Button Click</button>
+  </div>
   <div id="app"></div>
   <script type="module" src="/src/main.ts"></script>
 </body>
